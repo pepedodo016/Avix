@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57C07ABDDABEA1C79711D901 /* Pods_AviXCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75C1D89B1004FEEFD151C4E /* Pods_AviXCloud.framework */; };
+		640A3BF42CFA181300FDB65C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 640A3BF32CFA181300FDB65C /* PrivacyInfo.xcprivacy */; };
+		640A3BF72CFA185000FDB65C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 640A3BF62CFA185000FDB65C /* loading.json */; };
+		640A3BF92CFA198000FDB65C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 640A3BF82CFA198000FDB65C /* GoogleService-Info.plist */; };
+		D5098A332CF8B93C004C94CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A002CF8B93C004C94CA /* AppDelegate.swift */; };
+		D5098A342CF8B93C004C94CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A012CF8B93C004C94CA /* SceneDelegate.swift */; };
+		D5098A352CF8B93C004C94CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A022CF8B93C004C94CA /* ViewController.swift */; };
+		D5098A362CF8B93C004C94CA /* MainDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A042CF8B93C004C94CA /* MainDomainModel.swift */; };
+		D5098A372CF8B93C004C94CA /* MainDomainModelStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A052CF8B93C004C94CA /* MainDomainModelStorage.swift */; };
+		D5098A382CF8B93C004C94CA /* CupsGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A072CF8B93C004C94CA /* CupsGameScreen.swift */; };
+		D5098A392CF8B93C004C94CA /* CupsGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A082CF8B93C004C94CA /* CupsGameViewModel.swift */; };
+		D5098A3A2CF8B93C004C94CA /* CupsLevelsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A0A2CF8B93C004C94CA /* CupsLevelsScreen.swift */; };
+		D5098A3B2CF8B93C004C94CA /* CupsLevelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A0B2CF8B93C004C94CA /* CupsLevelsViewModel.swift */; };
+		D5098A3C2CF8B93C004C94CA /* InfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A0D2CF8B93C004C94CA /* InfoScreen.swift */; };
+		D5098A3D2CF8B93C004C94CA /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A0F2CF8B93C004C94CA /* MainScreen.swift */; };
+		D5098A3E2CF8B93C004C94CA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A102CF8B93C004C94CA /* MainViewModel.swift */; };
+		D5098A3F2CF8B93C004C94CA /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A122CF8B93C004C94CA /* CustomLoaderView.swift */; };
+		D5098A402CF8B93C004C94CA /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A132CF8B93C004C94CA /* OnboardingScreen.swift */; };
+		D5098A412CF8B93C004C94CA /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A142CF8B93C004C94CA /* OnboardingViewModel.swift */; };
+		D5098A422CF8B93C004C94CA /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A162CF8B93C004C94CA /* SettingsScreen.swift */; };
+		D5098A432CF8B93C004C94CA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A172CF8B93C004C94CA /* SettingsViewModel.swift */; };
+		D5098A442CF8B93C004C94CA /* ShuffleGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A192CF8B93C004C94CA /* ShuffleGameScreen.swift */; };
+		D5098A452CF8B93C004C94CA /* ShuffleGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A1A2CF8B93C004C94CA /* ShuffleGameViewModel.swift */; };
+		D5098A462CF8B93C004C94CA /* ShuffleLevelItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A1C2CF8B93C004C94CA /* ShuffleLevelItemView.swift */; };
+		D5098A472CF8B93C004C94CA /* ShuffleLevelItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A1D2CF8B93C004C94CA /* ShuffleLevelItemViewModel.swift */; };
+		D5098A482CF8B93C004C94CA /* ShuffleLevelsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A1F2CF8B93C004C94CA /* ShuffleLevelsScreen.swift */; };
+		D5098A492CF8B93C004C94CA /* ShuffleLevelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A202CF8B93C004C94CA /* ShuffleLevelsViewModel.swift */; };
+		D5098A4A2CF8B93C004C94CA /* RealmCupsDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A232CF8B93C004C94CA /* RealmCupsDomainModel.swift */; };
+		D5098A4B2CF8B93C004C94CA /* RealmShuffleDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A242CF8B93C004C94CA /* RealmShuffleDomainModel.swift */; };
+		D5098A4C2CF8B93C004C94CA /* RealmDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A262CF8B93C004C94CA /* RealmDomainModel.swift */; };
+		D5098A4D2CF8B93C004C94CA /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A272CF8B93C004C94CA /* RealmStorage.swift */; };
+		D5098A4E2CF8B93C004C94CA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A292CF8B93C004C94CA /* View.swift */; };
+		D5098A4F2CF8B93C004C94CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5098A2C2CF8B93C004C94CA /* Assets.xcassets */; };
+		D5098A512CF8B93C004C94CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5098A2F2CF8B93C004C94CA /* LaunchScreen.storyboard */; };
+		D5098A522CF8B93C004C94CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5098A312CF8B93C004C94CA /* Main.storyboard */; };
+		D5B5AC8E2CF9BCD3003B6E04 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B5AC8D2CF9BCD3003B6E04 /* InfoViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D54D36FD2CF895C300082AC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		640A3BF32CFA181300FDB65C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		640A3BF52CFA184000FDB65C /* AviXCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AviXCloud.entitlements; sourceTree = "<group>"; };
+		640A3BF62CFA185000FDB65C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		640A3BF82CFA198000FDB65C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5098A002CF8B93C004C94CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5098A012CF8B93C004C94CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5098A022CF8B93C004C94CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5098A042CF8B93C004C94CA /* MainDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDomainModel.swift; sourceTree = "<group>"; };
+		D5098A052CF8B93C004C94CA /* MainDomainModelStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDomainModelStorage.swift; sourceTree = "<group>"; };
+		D5098A072CF8B93C004C94CA /* CupsGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsGameScreen.swift; sourceTree = "<group>"; };
+		D5098A082CF8B93C004C94CA /* CupsGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsGameViewModel.swift; sourceTree = "<group>"; };
+		D5098A0A2CF8B93C004C94CA /* CupsLevelsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsLevelsScreen.swift; sourceTree = "<group>"; };
+		D5098A0B2CF8B93C004C94CA /* CupsLevelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsLevelsViewModel.swift; sourceTree = "<group>"; };
+		D5098A0D2CF8B93C004C94CA /* InfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreen.swift; sourceTree = "<group>"; };
+		D5098A0F2CF8B93C004C94CA /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		D5098A102CF8B93C004C94CA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D5098A122CF8B93C004C94CA /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
+		D5098A132CF8B93C004C94CA /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		D5098A142CF8B93C004C94CA /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		D5098A162CF8B93C004C94CA /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		D5098A172CF8B93C004C94CA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D5098A192CF8B93C004C94CA /* ShuffleGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleGameScreen.swift; sourceTree = "<group>"; };
+		D5098A1A2CF8B93C004C94CA /* ShuffleGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleGameViewModel.swift; sourceTree = "<group>"; };
+		D5098A1C2CF8B93C004C94CA /* ShuffleLevelItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleLevelItemView.swift; sourceTree = "<group>"; };
+		D5098A1D2CF8B93C004C94CA /* ShuffleLevelItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleLevelItemViewModel.swift; sourceTree = "<group>"; };
+		D5098A1F2CF8B93C004C94CA /* ShuffleLevelsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleLevelsScreen.swift; sourceTree = "<group>"; };
+		D5098A202CF8B93C004C94CA /* ShuffleLevelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleLevelsViewModel.swift; sourceTree = "<group>"; };
+		D5098A232CF8B93C004C94CA /* RealmCupsDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCupsDomainModel.swift; sourceTree = "<group>"; };
+		D5098A242CF8B93C004C94CA /* RealmShuffleDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmShuffleDomainModel.swift; sourceTree = "<group>"; };
+		D5098A262CF8B93C004C94CA /* RealmDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDomainModel.swift; sourceTree = "<group>"; };
+		D5098A272CF8B93C004C94CA /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		D5098A292CF8B93C004C94CA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		D5098A2C2CF8B93C004C94CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5098A2D2CF8B93C004C94CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5098A2E2CF8B93C004C94CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5098A302CF8B93C004C94CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D532A0322CF4FE4700C21264 /* AviXCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviXCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B5AC8D2CF9BCD3003B6E04 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		E75C1D89B1004FEEFD151C4E /* Pods_AviXCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviXCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81F54D93498356EF1EAEC6F /* Pods-AviXCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviXCloud.release.xcconfig"; path = "Target Support Files/Pods-AviXCloud/Pods-AviXCloud.release.xcconfig"; sourceTree = "<group>"; };
+		F83A601AEC756FF9EC10BBEA /* Pods-AviXCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviXCloud.debug.xcconfig"; path = "Target Support Files/Pods-AviXCloud/Pods-AviXCloud.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D532A02F2CF4FE4700C21264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C07ABDDABEA1C79711D901 /* Pods_AviXCloud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDFEA37127E8064EC978F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E75C1D89B1004FEEFD151C4E /* Pods_AviXCloud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5098A032CF8B93C004C94CA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A002CF8B93C004C94CA /* AppDelegate.swift */,
+				D5098A012CF8B93C004C94CA /* SceneDelegate.swift */,
+				D5098A022CF8B93C004C94CA /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D5098A062CF8B93C004C94CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A042CF8B93C004C94CA /* MainDomainModel.swift */,
+				D5098A052CF8B93C004C94CA /* MainDomainModelStorage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5098A092CF8B93C004C94CA /* CupsGame */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A072CF8B93C004C94CA /* CupsGameScreen.swift */,
+				D5098A082CF8B93C004C94CA /* CupsGameViewModel.swift */,
+			);
+			path = CupsGame;
+			sourceTree = "<group>";
+		};
+		D5098A0C2CF8B93C004C94CA /* CupsLevels */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A0A2CF8B93C004C94CA /* CupsLevelsScreen.swift */,
+				D5098A0B2CF8B93C004C94CA /* CupsLevelsViewModel.swift */,
+			);
+			path = CupsLevels;
+			sourceTree = "<group>";
+		};
+		D5098A0E2CF8B93C004C94CA /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A0D2CF8B93C004C94CA /* InfoScreen.swift */,
+				D5B5AC8D2CF9BCD3003B6E04 /* InfoViewModel.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		D5098A112CF8B93C004C94CA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A0F2CF8B93C004C94CA /* MainScreen.swift */,
+				D5098A102CF8B93C004C94CA /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D5098A152CF8B93C004C94CA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A122CF8B93C004C94CA /* CustomLoaderView.swift */,
+				D5098A132CF8B93C004C94CA /* OnboardingScreen.swift */,
+				D5098A142CF8B93C004C94CA /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D5098A182CF8B93C004C94CA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A162CF8B93C004C94CA /* SettingsScreen.swift */,
+				D5098A172CF8B93C004C94CA /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D5098A1B2CF8B93C004C94CA /* ShuffleGame */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A192CF8B93C004C94CA /* ShuffleGameScreen.swift */,
+				D5098A1A2CF8B93C004C94CA /* ShuffleGameViewModel.swift */,
+			);
+			path = ShuffleGame;
+			sourceTree = "<group>";
+		};
+		D5098A1E2CF8B93C004C94CA /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A1C2CF8B93C004C94CA /* ShuffleLevelItemView.swift */,
+				D5098A1D2CF8B93C004C94CA /* ShuffleLevelItemViewModel.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		D5098A212CF8B93C004C94CA /* ShuffleLevels */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A1E2CF8B93C004C94CA /* Item */,
+				D5098A1F2CF8B93C004C94CA /* ShuffleLevelsScreen.swift */,
+				D5098A202CF8B93C004C94CA /* ShuffleLevelsViewModel.swift */,
+			);
+			path = ShuffleLevels;
+			sourceTree = "<group>";
+		};
+		D5098A222CF8B93C004C94CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A092CF8B93C004C94CA /* CupsGame */,
+				D5098A0C2CF8B93C004C94CA /* CupsLevels */,
+				D5098A0E2CF8B93C004C94CA /* Info */,
+				D5098A112CF8B93C004C94CA /* Main */,
+				D5098A152CF8B93C004C94CA /* Onboarding */,
+				D5098A182CF8B93C004C94CA /* Settings */,
+				D5098A1B2CF8B93C004C94CA /* ShuffleGame */,
+				D5098A212CF8B93C004C94CA /* ShuffleLevels */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D5098A252CF8B93C004C94CA /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A232CF8B93C004C94CA /* RealmCupsDomainModel.swift */,
+				D5098A242CF8B93C004C94CA /* RealmShuffleDomainModel.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		D5098A282CF8B93C004C94CA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A252CF8B93C004C94CA /* Items */,
+				D5098A262CF8B93C004C94CA /* RealmDomainModel.swift */,
+				D5098A272CF8B93C004C94CA /* RealmStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		D5098A2A2CF8B93C004C94CA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A292CF8B93C004C94CA /* View.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D5098A2B2CF8B93C004C94CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A032CF8B93C004C94CA /* Application */,
+				D5098A062CF8B93C004C94CA /* Models */,
+				D5098A222CF8B93C004C94CA /* Modules */,
+				D5098A282CF8B93C004C94CA /* Storage */,
+				D5098A2A2CF8B93C004C94CA /* Utils */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5098A322CF8B93C004C94CA /* AviXCloud */ = {
+			isa = PBXGroup;
+			children = (
+				640A3BF52CFA184000FDB65C /* AviXCloud.entitlements */,
+				D5098A2B2CF8B93C004C94CA /* Resources */,
+				D5098A2C2CF8B93C004C94CA /* Assets.xcassets */,
+				D5098A2D2CF8B93C004C94CA /* Info.plist */,
+				D5098A2F2CF8B93C004C94CA /* LaunchScreen.storyboard */,
+				D5098A312CF8B93C004C94CA /* Main.storyboard */,
+			);
+			path = AviXCloud;
+			sourceTree = "<group>";
+		};
+		D532A0292CF4FE4700C21264 = {
+			isa = PBXGroup;
+			children = (
+				640A3BF62CFA185000FDB65C /* loading.json */,
+				640A3BF82CFA198000FDB65C /* GoogleService-Info.plist */,
+				640A3BF32CFA181300FDB65C /* PrivacyInfo.xcprivacy */,
+				D5098A322CF8B93C004C94CA /* AviXCloud */,
+				D532A0332CF4FE4700C21264 /* Products */,
+				FE6783C34FAFAFA3634C8E03 /* Pods */,
+				4CDFEA37127E8064EC978F13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D532A0332CF4FE4700C21264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D532A0322CF4FE4700C21264 /* AviXCloud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE6783C34FAFAFA3634C8E03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F83A601AEC756FF9EC10BBEA /* Pods-AviXCloud.debug.xcconfig */,
+				E81F54D93498356EF1EAEC6F /* Pods-AviXCloud.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D532A0312CF4FE4700C21264 /* AviXCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D532A0452CF4FE4A00C21264 /* Build configuration list for PBXNativeTarget "AviXCloud" */;
+			buildPhases = (
+				EE07AEE81AD74607D49AA8D8 /* [CP] Check Pods Manifest.lock */,
+				D532A02E2CF4FE4700C21264 /* Sources */,
+				D532A02F2CF4FE4700C21264 /* Frameworks */,
+				D532A0302CF4FE4700C21264 /* Resources */,
+				D54D36FD2CF895C300082AC1 /* Embed Frameworks */,
+				81C2C1DA62BEED3E3A3662B9 /* [CP] Embed Pods Frameworks */,
+				A54C6B45AE49ECEB443F2A50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AviXCloud;
+			productName = HeavenlyShuffle;
+			productReference = D532A0322CF4FE4700C21264 /* AviXCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D532A02A2CF4FE4700C21264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D532A0312CF4FE4700C21264 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = D532A02D2CF4FE4700C21264 /* Build configuration list for PBXProject "AviXCloud" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D532A0292CF4FE4700C21264;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = D532A0332CF4FE4700C21264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D532A0312CF4FE4700C21264 /* AviXCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D532A0302CF4FE4700C21264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5098A4F2CF8B93C004C94CA /* Assets.xcassets in Resources */,
+				D5098A512CF8B93C004C94CA /* LaunchScreen.storyboard in Resources */,
+				640A3BF42CFA181300FDB65C /* PrivacyInfo.xcprivacy in Resources */,
+				D5098A522CF8B93C004C94CA /* Main.storyboard in Resources */,
+				640A3BF72CFA185000FDB65C /* loading.json in Resources */,
+				640A3BF92CFA198000FDB65C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81C2C1DA62BEED3E3A3662B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AviXCloud/Pods-AviXCloud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AviXCloud/Pods-AviXCloud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AviXCloud/Pods-AviXCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A54C6B45AE49ECEB443F2A50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AviXCloud/Pods-AviXCloud-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AviXCloud/Pods-AviXCloud-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AviXCloud/Pods-AviXCloud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE07AEE81AD74607D49AA8D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AviXCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D532A02E2CF4FE4700C21264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5098A332CF8B93C004C94CA /* AppDelegate.swift in Sources */,
+				D5098A342CF8B93C004C94CA /* SceneDelegate.swift in Sources */,
+				D5098A352CF8B93C004C94CA /* ViewController.swift in Sources */,
+				D5098A362CF8B93C004C94CA /* MainDomainModel.swift in Sources */,
+				D5098A372CF8B93C004C94CA /* MainDomainModelStorage.swift in Sources */,
+				D5098A382CF8B93C004C94CA /* CupsGameScreen.swift in Sources */,
+				D5098A392CF8B93C004C94CA /* CupsGameViewModel.swift in Sources */,
+				D5098A3A2CF8B93C004C94CA /* CupsLevelsScreen.swift in Sources */,
+				D5098A3B2CF8B93C004C94CA /* CupsLevelsViewModel.swift in Sources */,
+				D5098A3C2CF8B93C004C94CA /* InfoScreen.swift in Sources */,
+				D5098A3D2CF8B93C004C94CA /* MainScreen.swift in Sources */,
+				D5098A3E2CF8B93C004C94CA /* MainViewModel.swift in Sources */,
+				D5098A3F2CF8B93C004C94CA /* CustomLoaderView.swift in Sources */,
+				D5098A402CF8B93C004C94CA /* OnboardingScreen.swift in Sources */,
+				D5098A412CF8B93C004C94CA /* OnboardingViewModel.swift in Sources */,
+				D5098A422CF8B93C004C94CA /* SettingsScreen.swift in Sources */,
+				D5098A432CF8B93C004C94CA /* SettingsViewModel.swift in Sources */,
+				D5098A442CF8B93C004C94CA /* ShuffleGameScreen.swift in Sources */,
+				D5098A452CF8B93C004C94CA /* ShuffleGameViewModel.swift in Sources */,
+				D5098A462CF8B93C004C94CA /* ShuffleLevelItemView.swift in Sources */,
+				D5098A472CF8B93C004C94CA /* ShuffleLevelItemViewModel.swift in Sources */,
+				D5098A482CF8B93C004C94CA /* ShuffleLevelsScreen.swift in Sources */,
+				D5098A492CF8B93C004C94CA /* ShuffleLevelsViewModel.swift in Sources */,
+				D5098A4A2CF8B93C004C94CA /* RealmCupsDomainModel.swift in Sources */,
+				D5B5AC8E2CF9BCD3003B6E04 /* InfoViewModel.swift in Sources */,
+				D5098A4B2CF8B93C004C94CA /* RealmShuffleDomainModel.swift in Sources */,
+				D5098A4C2CF8B93C004C94CA /* RealmDomainModel.swift in Sources */,
+				D5098A4D2CF8B93C004C94CA /* RealmStorage.swift in Sources */,
+				D5098A4E2CF8B93C004C94CA /* View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5098A2F2CF8B93C004C94CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5098A2E2CF8B93C004C94CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D5098A312CF8B93C004C94CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5098A302CF8B93C004C94CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D532A0462CF4FE4A00C21264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83A601AEC756FF9EC10BBEA /* Pods-AviXCloud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AviXCloud/AviXCloud.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AviXCloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AviX Cloud";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AviXCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D532A0472CF4FE4A00C21264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81F54D93498356EF1EAEC6F /* Pods-AviXCloud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AviXCloud/AviXCloud.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AviXCloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AviX Cloud";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AviXCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D532A0482CF4FE4A00C21264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D532A0492CF4FE4A00C21264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D532A02D2CF4FE4700C21264 /* Build configuration list for PBXProject "AviXCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D532A0482CF4FE4A00C21264 /* Debug */,
+				D532A0492CF4FE4A00C21264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D532A0452CF4FE4A00C21264 /* Build configuration list for PBXNativeTarget "AviXCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D532A0462CF4FE4A00C21264 /* Debug */,
+				D532A0472CF4FE4A00C21264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D532A02A2CF4FE4700C21264 /* Project object */;
+}

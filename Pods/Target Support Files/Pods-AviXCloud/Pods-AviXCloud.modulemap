@@ -1,0 +1,6 @@
+framework module Pods_AviXCloud {
+  umbrella header "Pods-AviXCloud-umbrella.h"
+
+  export *
+  module * { export * }
+}
