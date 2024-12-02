@@ -136,6 +136,9 @@ struct MainScreen: View {
                     .blur(radius: 3)
             )
         }
+        .onAppear {
+            viewModel.loadData()
+        }
     }
     
     
